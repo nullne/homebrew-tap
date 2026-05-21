@@ -5,21 +5,21 @@
 class Multica < Formula
   desc "Multica CLI — local agent runtime and management tool for the Multica platform"
   homepage "https://github.com/nullne/multica"
-  version "0.2.96"
+  version "0.2.97"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nullne/multica/releases/download/v0.2.96/multica_darwin_amd64.tar.gz"
-      sha256 "77d30042d8454b592fc959e626a90540d84d7a50502113034770c7e1c524450d"
+      url "https://github.com/nullne/multica/releases/download/v0.2.97/multica_darwin_amd64.tar.gz"
+      sha256 "6a8981b98d8b0d02ff4c5978723a30e24b63666d8f33f4608cf15217ff40eb46"
 
       define_method(:install) do
         bin.install "multica"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nullne/multica/releases/download/v0.2.96/multica_darwin_arm64.tar.gz"
-      sha256 "11071e9c66c844e6114b4434441f1207d90e218fb25cc598b23dd06989b672d4"
+      url "https://github.com/nullne/multica/releases/download/v0.2.97/multica_darwin_arm64.tar.gz"
+      sha256 "4c9dc32ad687e235ee1954ecab12d905af64618d21ecb8faa4a4b6886b547da1"
 
       define_method(:install) do
         bin.install "multica"
@@ -29,15 +29,15 @@ class Multica < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nullne/multica/releases/download/v0.2.96/multica_linux_amd64.tar.gz"
-      sha256 "d22bbeb6dd14fc147abba2a6a4f3c47459c5f6f15e01aaea171bb21e54e3934a"
+      url "https://github.com/nullne/multica/releases/download/v0.2.97/multica_linux_amd64.tar.gz"
+      sha256 "ade4258ec229c735f5458252aca1e4c294ede36f3dc25a5c8608cd08c0f04661"
       define_method(:install) do
         bin.install "multica"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nullne/multica/releases/download/v0.2.96/multica_linux_arm64.tar.gz"
-      sha256 "cf1a5a6dbdaa5e3ade8318761f0b24e00c75461be1b41c5bb2833b52af3e3476"
+      url "https://github.com/nullne/multica/releases/download/v0.2.97/multica_linux_arm64.tar.gz"
+      sha256 "4d0a707bc51f21f264101865e0351a1432cc44f3f07dffc15228206b3b129d38"
       define_method(:install) do
         bin.install "multica"
       end
